@@ -20,7 +20,7 @@ const AddJob = () => {
     const token = localStorage.getItem('token');
     try {
       await axios.post(
-        'http://localhost:8080/api/jobs',
+        'https://job-backend-render-2.onrender.com/jobs',
         { company, role, status, appliedDate, notes },
         { headers: { Authorization: `Bearer ${token}` } }
       );
