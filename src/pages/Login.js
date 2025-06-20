@@ -30,7 +30,7 @@ const Login = () => {
       <input name="email" type="email" placeholder="Email" onChange={handleChange} required />
       <input name="password" type="password" placeholder="Password" onChange={handleChange} required />
       <button type="submit">Login</button>
-      <p className="link">Don't have an account? <a href="https://job-backend-render-2.onrender.com/auth/register">Register</a></p>
+      <p className="link">Don't have an account? <a href="https://job-frontend-vercel.onrender.com/register">Register</a></p>
     </form>
     </div>
   );
