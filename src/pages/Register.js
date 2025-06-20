@@ -14,7 +14,7 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await API.post(`http://localhost:8080/api/auth/register`, formData);
+      await API.post(`https://job-backend-render-2.onrender.com/auth/register`, formData);
       alert('Registration successful! Please login.');
       navigate('/login');
     } catch (err) {
