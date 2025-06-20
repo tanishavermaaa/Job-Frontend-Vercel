@@ -33,7 +33,7 @@ const Register = () => {
       <input name="password" type="password" placeholder="Password" onChange={handleChange} required />
       <button type="submit">Register</button>
       <p className="link">
-          Already have an account? <a href="/login">Login</a>
+          Already have an account? <a href="/auth/login">Login</a>
         </p>
     </form>
     </div>
