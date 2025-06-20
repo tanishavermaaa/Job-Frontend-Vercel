@@ -4,7 +4,10 @@ import '../styles/LandingPage.css';
 
 const LandingPage = () => {
   return (
-    <div className="landing">
+    <div className="landing"
+    style={{
+        backgroundImage: `url(${process.env.PUBLIC_URL}/bg-job-website.jpg)`}} 
+    >
       <div className="overlay">
         <div className="landing-content">
           <h1>Job Application Tracker</h1>
