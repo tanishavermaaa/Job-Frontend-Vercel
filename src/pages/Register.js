@@ -33,7 +33,7 @@ const Register = () => {
       <input name="password" type="password" placeholder="Password" onChange={handleChange} required />
       <button type="submit">Register</button>
       <p className="link">
-          Already have an account? <a href="/auth/login">Login</a>
+          Already have an account? <a href="https://job-frontend-vercel.onrender.com/login">Login</a>
         </p>
     </form>
     </div>
