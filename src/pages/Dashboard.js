@@ -20,7 +20,7 @@ const Dashboard = () => {
       if (order) params.append('order', order);
 
       try {
-        const res = await axios.get(`http://localhost:8080/api/jobs?${params.toString()}`, {
+        const res = await axios.get(`https://job-backend-render-2.onrender.com/jobs?${params.toString()}`, {
           headers: { Authorization: `Bearer ${token}` },
         });
         setJobs(res.data);
@@ -42,7 +42,7 @@ const Dashboard = () => {
 
     try {
       const token = localStorage.getItem('token');
-      await axios.delete(`http://localhost:8080/api/jobs/${id}`, {
+      await axios.delete(`https://job-backend-render-2.onrender.com/jobs/${id}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
 
