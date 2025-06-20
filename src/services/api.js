@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-  baseURL: 'http://localhost:8080/api',
+  baseURL: 'https://job-backend-render-2.onrender.com',
 });
 
 // Add JWT token to every request if available
