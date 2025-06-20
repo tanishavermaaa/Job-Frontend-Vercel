@@ -17,7 +17,7 @@ const EditJob = () => {
     const fetchJob = async () => {
       try {
         const token = localStorage.getItem('token');
-        const res = await axios.get(`http://localhost:8080/api/jobs/${id}`, {
+        const res = await axios.get(`https://job-backend-render-2.onrender.com/jobs/${id}`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -45,7 +45,7 @@ const EditJob = () => {
     const token = localStorage.getItem('token');
 
     await axios.put(
-      `http://localhost:8080/api/jobs/${id}`,
+      `https://job-backend-render-2.onrender.com/jobs/${id}`,
       { company, role, status, appliedDate, notes },
       {
         headers: {
